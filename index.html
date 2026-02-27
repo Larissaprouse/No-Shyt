@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>24/7 Expert Plumbers in [CITY] | Fast Emergency Service</title>
-    <meta name="description" content="Need an emergency plumber in [CITY]? Professional 24/7 service for water leaks, clogged drains, and water heaters. 60-minute arrival! Get a free quote.">
+    <title>No-Shyt Plumbing | 24/7 Expert Service in [CITY]</title>
+    <meta name="description" content="Professional 24/7 plumbing service in [CITY]. We handle water leaks, clogged drains, and water heaters. 60-minute arrival! Get a free quote today.">
     
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 
@@ -40,21 +40,26 @@
         .logo { font-family: 'Montserrat', sans-serif; font-weight: 800; color: var(--primary-blue); font-size: 1.2rem; text-transform: uppercase; }
         .nav-phone { color: var(--primary-blue); font-weight: 700; text-decoration: none; font-size: 0.9rem; }
 
-        /* Hero Section */
+        /* Hero Section with Full Person Image */
         header {
-            background: linear-gradient(rgba(0,40,80,0.85), rgba(0,40,80,0.85)), 
-                        url('https://images.unsplash.com/photo-1581244276891-9979c459127a?auto=format&fit=crop&w=1200&q=80');
+            background: linear-gradient(rgba(0,40,80,0.7), rgba(0,40,80,0.7)), 
+                        url('http://googleusercontent.com/image_collection/image_retrieval/5061683325138392037_0');
             background-size: cover;
             background-position: center;
             color: var(--white);
-            padding: 80px 5%;
+            padding: 100px 5%;
             text-align: center;
+            min-height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
-        header h1 { font-family: 'Montserrat', sans-serif; font-size: 2.2rem; margin-bottom: 20px; line-height: 1.2; }
-        header p { font-size: 1.1rem; margin-bottom: 30px; max-width: 700px; margin-inline: auto; opacity: 0.9; }
+        header h1 { font-family: 'Montserrat', sans-serif; font-size: 2.5rem; margin-bottom: 20px; line-height: 1.2; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); }
+        header p { font-size: 1.2rem; margin-bottom: 30px; max-width: 700px; opacity: 0.9; text-shadow: 1px 1px 2px rgba(0,0,0,0.5); }
 
-        /* Conversion Buttons */
-        .btn-group { display: flex; flex-direction: column; gap: 15px; align-items: center; }
+        /* Buttons */
+        .btn-group { display: flex; flex-direction: column; gap: 15px; width: 100%; max-width: 320px; }
         .btn {
             display: inline-block;
             padding: 18px 30px;
@@ -63,37 +68,31 @@
             font-weight: 700;
             text-transform: uppercase;
             transition: 0.3s;
-            width: 100%;
-            max-width: 320px;
             text-align: center;
             letter-spacing: 1px;
         }
-        .btn-call { background: var(--primary-blue); color: white; border: none; }
-        .btn-wa { background: var(--whatsapp-green); color: white; border: none; }
+        .btn-call { background: var(--primary-blue); color: white; }
+        .btn-wa { background: var(--whatsapp-green); color: white; }
         .btn:hover { transform: translateY(-3px); box-shadow: 0 5px 15px rgba(0,0,0,0.3); }
 
-        /* Trust Signals */
-        .trust-section { padding: 40px 5%; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; background: var(--bg-light); border-bottom: 1px solid #ddd; }
-        .trust-card { text-align: center; padding: 10px; }
-        .trust-card h3 { color: var(--primary-blue); font-size: 1rem; margin-bottom: 5px; text-transform: uppercase; }
-        .trust-card p { font-size: 0.85rem; font-weight: 600; }
+        /* Trust Section */
+        .trust { padding: 40px 5%; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; background: var(--bg-light); text-align: center; border-bottom: 1px solid #ddd; }
+        .trust h3 { color: var(--primary-blue); font-size: 1rem; text-transform: uppercase; }
 
-        /* Services Grid */
+        /* Services */
         .services { padding: 60px 5%; background: var(--white); }
         .section-title { text-align: center; font-family: 'Montserrat', sans-serif; margin-bottom: 40px; font-size: 1.8rem; color: var(--dark-blue); }
-        .service-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; }
-        .service-item { padding: 30px; background: #fff; border: 1px solid #eee; border-radius: 8px; transition: 0.3s; position: relative; }
-        .service-item:hover { border-color: var(--primary-blue); box-shadow: 0 10px 20px rgba(0,0,0,0.05); }
-        .service-item h3 { color: var(--primary-blue); margin-bottom: 15px; font-size: 1.2rem; border-bottom: 2px solid var(--bg-light); padding-bottom: 10px; }
-        .service-item p { font-size: 0.95rem; color: #555; }
+        .service-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; }
+        .service-card { padding: 30px; border: 1px solid #eee; border-radius: 8px; transition: 0.3s; }
+        .service-card:hover { border-color: var(--primary-blue); box-shadow: 0 10px 20px rgba(0,0,0,0.05); }
+        .service-card h3 { color: var(--primary-blue); margin-bottom: 15px; font-size: 1.2rem; }
 
         /* Footer */
-        footer { background: var(--dark-blue); color: white; padding: 60px 5% 120px 5%; text-align: center; }
-        footer h3 { margin-bottom: 20px; font-family: 'Montserrat', sans-serif; text-transform: uppercase; }
-        footer p { margin-bottom: 10px; opacity: 0.7; font-size: 0.9rem; }
+        footer { background: var(--dark-blue); color: white; padding: 60px 5% 100px 5%; text-align: center; }
+        footer p { opacity: 0.7; font-size: 0.9rem; margin-top: 10px; }
 
-        /* Mobile Sticky Conversion Bar */
-        .mobile-cta-bar {
+        /* Mobile Bottom Bar */
+        .mobile-bar {
             position: fixed;
             bottom: 0;
             left: 0;
@@ -102,103 +101,70 @@
             grid-template-columns: 1fr 1fr;
             height: 70px;
             z-index: 9999;
-            box-shadow: 0 -2px 10px rgba(0,0,0,0.2);
         }
-        .bar-btn {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-decoration: none;
-            color: white;
-            font-weight: 800;
-            font-size: 0.9rem;
-            text-transform: uppercase;
-        }
-        .bg-whatsapp { background-color: var(--whatsapp-green); }
-        .bg-phone { background-color: var(--primary-blue); }
+        .bar-link { display: flex; align-items: center; justify-content: center; text-decoration: none; color: white; font-weight: 800; font-size: 0.9rem; }
+        .bg-wa { background-color: var(--whatsapp-green); }
+        .bg-call { background-color: var(--primary-blue); }
 
-        /* Desktop View Adjustments */
         @media (min-width: 768px) {
-            header { padding: 120px 5%; }
-            header h1 { font-size: 3.5rem; }
-            header p { font-size: 1.3rem; }
-            .btn-group { flex-direction: row; justify-content: center; }
-            .mobile-cta-bar { display: none; }
+            header h1 { font-size: 4rem; }
+            .btn-group { flex-direction: row; max-width: 700px; justify-content: center; }
+            .mobile-bar { display: none; }
             footer { padding-bottom: 60px; }
-            nav .logo { font-size: 1.5rem; }
-            nav .nav-phone { font-size: 1.1rem; }
         }
     </style>
 </head>
 <body>
 
     <nav>
-        <div class="logo">[BUSINESS NAME]</div>
-        <a href="tel:[PHONE]" class="nav-phone">📞 Call: [PHONE]</a>
+        <div class="logo">No-Shyt Plumbing</div>
+        <a href="tel:[PHONE]" class="nav-phone">📞 [PHONE]</a>
     </nav>
 
     <header>
-        <h1>24/7 Emergency Plumbing in [CITY]</h1>
-        <p>Expert local plumbers ready to fix leaks, unclog drains, and repair water heaters. Fast response, fair pricing, and 100% guaranteed work.</p>
+        <h1>Reliable Plumbing 24/7</h1>
+        <p>Expert local plumbers in [CITY] ready to fix your emergencies. We don't mess around—we just fix it.</p>
         <div class="btn-group">
-            <a href="tel:[PHONE]" class="btn btn-call">Call Technician Now</a>
-            <a href="https://wa.me/[WHATSAPP]" class="btn btn-wa">WhatsApp Message</a>
+            <a href="tel:[PHONE]" class="btn btn-call">Call Now</a>
+            <a href="https://wa.me/[WHATSAPP]" class="btn btn-wa">WhatsApp Us</a>
         </div>
     </header>
 
-    <section class="trust-section">
-        <div class="trust-card">
-            <h3>Quick Response</h3>
-            <p>On-site in 60 mins</p>
-        </div>
-        <div class="trust-card">
-            <h3>Expert Team</h3>
-            <p>Certified Technicians</p>
-        </div>
-        <div class="trust-card">
-            <h3>Fair Price</h3>
-            <p>No Hidden Charges</p>
-        </div>
-        <div class="trust-card">
-            <h3>Warranty</h3>
-            <p>Workmanship Guaranteed</p>
-        </div>
+    <section class="trust">
+        <div><h3>60 Min Arrival</h3><p>Fast Emergency Response</p></div>
+        <div><h3>Certified Pros</h3><p>Licensed Technicians</p></div>
+        <div><h3>Fair Pricing</h3><p>No Hidden Fees</p></div>
     </section>
 
     <section class="services">
-        <h2 class="section-title">Professional Solutions</h2>
-        <div class="service-list">
-            <div class="service-item">
+        <h2 class="section-title">Our Solutions</h2>
+        <div class="service-grid">
+            <div class="service-card">
                 <h3>💧 Leak Repair</h3>
-                <p>Advanced detection and repair for water and gas leaks. We fix broken pipes and dripping faucets quickly.</p>
+                <p>Detection and repair for all water and gas line leaks.</p>
             </div>
-            <div class="service-item">
+            <div class="service-card">
                 <h3>🚽 Drain Cleaning</h3>
-                <p>Professional unclogging for toilets, kitchen sinks, and main sewer lines using high-power equipment.</p>
+                <p>Professional unclogging for toilets, sinks, and sewer lines.</p>
             </div>
-            <div class="service-item">
+            <div class="service-card">
                 <h3>🔥 Water Heaters</h3>
-                <p>Repairs, maintenance, and installation for all major boiler brands including tankless and solar systems.</p>
-            </div>
-            <div class="service-item">
-                <h3>🛠️ Pump & Tank Service</h3>
-                <p>Maintenance and installation for water pumps, pressurizers, tinacos (water tanks), and cisterns.</p>
+                <p>Installation and repair of gas, electric, and solar heaters.</p>
             </div>
         </div>
     </section>
 
     <footer>
-        <h3>[BUSINESS NAME]</h3>
-        <p>Quality Plumbing Services in [CITY], Mexico</p>
-        <p>Serving residential and commercial clients for [YEARS] years.</p>
-        <p>Address: [ADDRESS], [CITY]</p>
+        <h3>No-Shyt Plumbing</h3>
+        <p>[ADDRESS], [CITY], Mexico</p>
         <p>Phone: [PHONE] | WhatsApp: [WHATSAPP]</p>
-        <p style="margin-top: 25px; font-size: 0.8rem; opacity: 0.5;">&copy; 2026 [BUSINESS NAME]. All Rights Reserved.</p>
+        <p>&copy; 2026 Professional Plumbing Services.</p>
     </footer>
 
-    <div class="mobile-cta-bar">
-        <a href="https://wa.me/[WHATSAPP]" class="bar-btn bg-whatsapp">WhatsApp</a>
-        <a href="tel:[PHONE]" class="bar-btn bg-phone">Call Now</a>
+    <div class="mobile-bar">
+        <a href="https://wa.me/[WHATSAPP]" class="bar-link bg-wa">WhatsApp</a>
+        <a href="tel:[PHONE]" class="bar-link bg-call">Call Now</a>
     </div>
-‹img src="plumber.jpeg" width="400"></body>
+
+</body>
 </html>
