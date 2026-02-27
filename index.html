@@ -40,7 +40,7 @@
         .logo { font-family: 'Montserrat', sans-serif; font-weight: 800; color: var(--primary-blue); font-size: 1.2rem; text-transform: uppercase; }
         .nav-phone { color: var(--primary-blue); font-weight: 700; text-decoration: none; font-size: 0.9rem; }
 
-        /* Hero Section with Full Person Image */
+        /* Hero Section */
         header {
             background: linear-gradient(rgba(0,40,80,0.7), rgba(0,40,80,0.7)), 
                         url('http://googleusercontent.com/image_collection/image_retrieval/5061683325138392037_0');
@@ -49,14 +49,14 @@
             color: var(--white);
             padding: 100px 5%;
             text-align: center;
-            min-height: 80vh;
+            min-height: 60vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
         }
-        header h1 { font-family: 'Montserrat', sans-serif; font-size: 2.5rem; margin-bottom: 20px; line-height: 1.2; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); }
-        header p { font-size: 1.2rem; margin-bottom: 30px; max-width: 700px; opacity: 0.9; text-shadow: 1px 1px 2px rgba(0,0,0,0.5); }
+        header h1 { font-family: 'Montserrat', sans-serif; font-size: 2.5rem; margin-bottom: 20px; line-height: 1.2; }
+        header p { font-size: 1.2rem; margin-bottom: 30px; max-width: 700px; opacity: 0.9; }
 
         /* Buttons */
         .btn-group { display: flex; flex-direction: column; gap: 15px; width: 100%; max-width: 320px; }
@@ -69,27 +69,24 @@
             text-transform: uppercase;
             transition: 0.3s;
             text-align: center;
-            letter-spacing: 1px;
         }
         .btn-call { background: var(--primary-blue); color: white; }
         .btn-wa { background: var(--whatsapp-green); color: white; }
         .btn:hover { transform: translateY(-3px); box-shadow: 0 5px 15px rgba(0,0,0,0.3); }
 
-        /* Trust Section */
-        .trust { padding: 40px 5%; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; background: var(--bg-light); text-align: center; border-bottom: 1px solid #ddd; }
-        .trust h3 { color: var(--primary-blue); font-size: 1rem; text-transform: uppercase; }
-
         /* Services */
         .services { padding: 60px 5%; background: var(--white); }
         .section-title { text-align: center; font-family: 'Montserrat', sans-serif; margin-bottom: 40px; font-size: 1.8rem; color: var(--dark-blue); }
         .service-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; }
-        .service-card { padding: 30px; border: 1px solid #eee; border-radius: 8px; transition: 0.3s; }
-        .service-card:hover { border-color: var(--primary-blue); box-shadow: 0 10px 20px rgba(0,0,0,0.05); }
-        .service-card h3 { color: var(--primary-blue); margin-bottom: 15px; font-size: 1.2rem; }
+        .service-card { padding: 30px; border: 1px solid #eee; border-radius: 8px; }
+
+        /* Gallery Section for your Plumber Image */
+        .gallery { padding: 60px 5%; background: var(--bg-light); text-align: center; }
+        .gallery-container { max-width: 600px; margin: 0 auto; border-radius: 10px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.1); border: 5px solid white; }
+        .gallery img { width: 100%; height: auto; display: block; }
 
         /* Footer */
         footer { background: var(--dark-blue); color: white; padding: 60px 5% 100px 5%; text-align: center; }
-        footer p { opacity: 0.7; font-size: 0.9rem; margin-top: 10px; }
 
         /* Mobile Bottom Bar */
         .mobile-bar {
@@ -102,7 +99,7 @@
             height: 70px;
             z-index: 9999;
         }
-        .bar-link { display: flex; align-items: center; justify-content: center; text-decoration: none; color: white; font-weight: 800; font-size: 0.9rem; }
+        .bar-link { display: flex; align-items: center; justify-content: center; text-decoration: none; color: white; font-weight: 800; }
         .bg-wa { background-color: var(--whatsapp-green); }
         .bg-call { background-color: var(--primary-blue); }
 
@@ -130,12 +127,6 @@
         </div>
     </header>
 
-    <section class="trust">
-        <div><h3>60 Min Arrival</h3><p>Fast Emergency Response</p></div>
-        <div><h3>Certified Pros</h3><p>Licensed Technicians</p></div>
-        <div><h3>Fair Pricing</h3><p>No Hidden Fees</p></div>
-    </section>
-
     <section class="services">
         <h2 class="section-title">Our Solutions</h2>
         <div class="service-grid">
@@ -152,6 +143,14 @@
                 <p>Installation and repair of gas, electric, and solar heaters.</p>
             </div>
         </div>
+    </section>
+
+    <section class="gallery">
+        <h2 class="section-title">Work In Action</h2>
+        <div class="gallery-container">
+            <img src="plumber.jpeg" alt="No-Shyt Plumbing Expert working on a sink">
+        </div>
+        <p style="margin-top: 15px; font-style: italic;">We get our hands dirty so you don't have to.</p>
     </section>
 
     <footer>
